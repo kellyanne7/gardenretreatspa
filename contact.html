@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./images/icons/lara-oz-logo.svg" crossorigin="anonymous"></link>
+        <script src="https://kit.fontawesome.com/c1e8c6306e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <!-- menu for ipad and smaller screens=> slide in/out -->
+<div class="menu-background" id="small-screen-menu">
+    <div class="responsive-menu">
+        <div class="menu-header">
+            <a href="./index.html" title="ホーム" alternative="ホーム">
+                <svg class="menu-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+                    <g>
+                        <ellipse class="st0" cx="400.08" cy="200.97" rx="197.24" ry="197.36"/>
+                        <ellipse class="st1" cx="400.08" cy="299.66" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="400.08" cy="102.29" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="498.7" cy="200.97" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="301.45" cy="200.97" rx="98.62" ry="98.68"/>
+                        <ellipse class="st0" cx="400.08" cy="595.7" rx="197.24" ry="197.36"/>
+                        <ellipse class="st1" cx="400.08" cy="694.39" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="400.08" cy="497.02" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="498.7" cy="595.7" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="301.45" cy="595.7" rx="98.62" ry="98.68"/>
+                        <ellipse class="st0" cx="202.83" cy="398.34" rx="197.24" ry="197.36"/>
+                        <ellipse class="st1" cx="301.45" cy="398.34" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="104.21" cy="398.34" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="202.83" cy="299.66" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="202.83" cy="497.02" rx="98.62" ry="98.68"/>
+                        <ellipse class="st0" cx="597.32" cy="398.34" rx="197.24" ry="197.36"/>
+                        <ellipse class="st1" cx="695.94" cy="398.34" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="498.7" cy="398.34" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="597.32" cy="299.66" rx="98.62" ry="98.68"/>
+                        <ellipse class="st1" cx="597.32" cy="497.02" rx="98.62" ry="98.68"/>
+                        <ellipse class="st2" cx="400.08" cy="398.34" rx="394.97" ry="395.22"/>
+                    </g>
+                </svg>
+            </a>
+            <h1 class="title menu-main">ガーデンリトリートスパ</h1>
+            <h2 class="title white-text menu-quote">自然の美と調和を見つける場所</h2>
+        </div>
+        <div class="responsive-menu-options">
+            <a class="nav-item menu-options" href="./about.html" title="私たちについて"><span>私たちについて</span></a>
+            <a class="nav-item menu-options" href="./treatments.html" title="トリートメント"><span>トリートメント</span></a>
+            <a class="nav-item menu-options" href="./prices.html" title="料金"><span>料金</span></a>
+            <a class="nav-item menu-options" href="./testimonials.html" title="お客様の声"><span>お客様の声</span></a>
+        </div>
+        <div class="responsive-details">
+            <a class="nav-item responsive-contact" href="mailto:#" title="メール"><i class="far fa-envelope"></i> メールでお問い合わせ</i></a>
+            <a class="nav-item responsive-contact" href="tel:0123451623" title="電話"><i class="fas fa-phone"></i> 0123 456 789</a>
+        </div>
+        <button onclick="window.location.href='./contact.html'" class="menu-btn">予約する</button>
+        <i class="fas nav-item menu-options fa-seedling menu-seedling"></i>
+    </div>
+</div>
+
+    <!-- burger bar menu=> animated -->
+    <div class="menu-bars" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <!-- navigation and header for larger screens -->
+    <div class="background">
+        <nav class="md-hide" id="nav">
+            <a class="nav-item" href="./index.html" title="ホーム">
+                <svg class="nav-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+                <g>
+                    <ellipse class="nav-st0" cx="400.08" cy="200.97" rx="197.24" ry="197.36"/>
+                    <ellipse class="nav-st1" cx="400.08" cy="299.66" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="400.08" cy="102.29" rx="98.62" ry="98.68"/>                        
+                    <ellipse class="nav-st1" cx="498.7" cy="200.97" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="301.45" cy="200.97" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st0" cx="400.08" cy="595.7" rx="197.24" ry="197.36"/>
+                    <ellipse class="nav-st1" cx="400.08" cy="694.39" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="400.08" cy="497.02" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="498.7" cy="595.7" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="301.45" cy="595.7" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st0" cx="202.83" cy="398.34" rx="197.24" ry="197.36"/>
+                    <ellipse class="nav-st1" cx="301.45" cy="398.34" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="104.21" cy="398.34" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="202.83" cy="299.66" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="202.83" cy="497.02" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st0" cx="597.32" cy="398.34" rx="197.24" ry="197.36"/>
+                    <ellipse class="nav-st1" cx="695.94" cy="398.34" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="498.7" cy="398.34" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="597.32" cy="299.66" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st1" cx="597.32" cy="497.02" rx="98.62" ry="98.68"/>
+                    <ellipse class="nav-st2" cx="400.08" cy="398.34" rx="394.97" ry="395.22"/>
+                </g>
+                </svg>
+            </a>
+            <div class="main-menu">
+                <a class="nav-item nav-options" href="./about.html" title="私たちについて"><span>私たちについて</span></a>
+                <a class="nav-item nav-options" href="./treatments.html" title="トリートメント"><span>トリートメント</span></a>
+                <a class="nav-item nav-options" href="./prices.html" title="料金"><span>料金</span></a>
+                <a class="nav-item nav-options" href="./testimonials.html" title="お客様の声"><span>お客様の声</span></a>
+            </div>
+            <div class="details">
+                <a class="nav-item nav-contact" href="" title="メール"><i class="far fa-envelope"></i> メールでお問い合わせ</i></a>
+                <a class="nav-item nav-contact" href="tel:+817759342015" title="電話"><i class="fas fa-phone"></i> +81 7759342015</a>
+            </div>
+            <button onclick="window.location.href='./contact.html'" class="nav-booking-btn">予約する</button>
+        </nav>
+        <div class="header">
+            <!-- logo svg -->
+            <svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+                <g>
+                    <ellipse class="st0" cx="400.08" cy="200.97" rx="197.24" ry="197.36"/>
+                    <ellipse class="st1" cx="400.08" cy="299.66" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="400.08" cy="102.29" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="498.7" cy="200.97" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="301.45" cy="200.97" rx="98.62" ry="98.68"/>
+                    <ellipse class="st0" cx="400.08" cy="595.7" rx="197.24" ry="197.36"/>
+                    <ellipse class="st1" cx="400.08" cy="694.39" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="400.08" cy="497.02" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="498.7" cy="595.7" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="301.45" cy="595.7" rx="98.62" ry="98.68"/>
+                    <ellipse class="st0" cx="202.83" cy="398.34" rx="197.24" ry="197.36"/>
+                    <ellipse class="st1" cx="301.45" cy="398.34" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="104.21" cy="398.34" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="202.83" cy="299.66" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="202.83" cy="497.02" rx="98.62" ry="98.68"/>
+                    <ellipse class="st0" cx="597.32" cy="398.34" rx="197.24" ry="197.36"/>
+                    <ellipse class="st1" cx="695.94" cy="398.34" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="498.7" cy="398.34" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="597.32" cy="299.66" rx="98.62" ry="98.68"/>
+                    <ellipse class="st1" cx="597.32" cy="497.02" rx="98.62" ry="98.68"/>
+                    <ellipse class="st2" cx="400.08" cy="398.34" rx="394.97" ry="395.22"/>
+                </g>
+            </svg>
+            <h1 class="title main">ガーデンリトリートスパ</h1>
+            <h2 class="title white-text quote">自然の中で心と体のバランスを取り戻す</h2>
+        </div>
+    </div>
+    <main>
+        <h1 class="title sm-contact-header"><i class="far fa-envelope"></i> お問い合わせ</h1>
+        <p class="main-blurb">ご質問やご予約をご希望の方は、以下のフォームにご記入ください。</p>
+        
+        <!-- contact form -->
+        <div class="contact-form-container">
+            <h2 class="title contact-title">お問い合わせフォーム</h2>
+            <form action="" method="get">
+                <!-- details -->
+                <input type="text" name="first-name" id="first-name" title="名" placeholder="名" required>
+                <input type="text" name="surname" id="surname" title="姓" placeholder="姓" required>
+                <input type="email" name="email-address" id="email-address" title="メールアドレス" placeholder="メールアドレス">
+                <input type="tel" name="phone-number" id="phone-number" title="電話番号" placeholder="電話番号">
+                
+                <!-- radio button options -->
+                <h3 class="title message-title">メッセージの種類を選択してください</h3>
+                <div class="radio-container">
+                    <div>
+                        <input type="radio" name="message-type" id="enquiry-radio" value="enquiry" title="お問い合わせ">
+                        <label for="enquiry-radio">お問い合わせ</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="message-type" id="booking-radio" value="booking" title="予約">
+                        <label for="booking-radio">予約</label>
+                    </div>
+                </div>
+                
+                <!-- date element: conditional hidden -->
+                <div class="date-container">
+                    <label for="date">ご希望の日付</label>
+                    <input type="date" name="booking-date" id="booking-date" title="日付を選択" placeholder="日付を選択">
+                </div>
+                
+                <!-- message -->
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="メッセージをご記入ください....." required></textarea>
+                
+                <button class="submit-btn" id="submit-btn">送信</button>
+            </form>
+        </div>
+    </main>
+    
+<!-- footer -->
+<footer>
+    <h2 class="title footer-title">今すぐ予約するか、お問い合わせください</h2>
+    <a href="./contact.html" class="footer-text" title="お問い合わせフォームへ"><i class="far fa-file-alt"></i> お問い合わせフォームへ</a>
+    <a class="footer-text email" href="mailto:info@gardenretreatspa.jp" title="メール"><i class="far fa-envelope"></i> メールでのお問い合わせ</i></a>
+    <a class="footer-text" href="tel:+817759342015" title="電話"><i class="fas fa-phone"></i> +81 77-593-42015</a>
+    <div class="wrapper">
+        <h3 class="title social-title"><i class="fas fa-hand-holding-heart"></i> SNSでつながりましょう</h3>
+        <div class="social">
+            <a href="https://www.facebook.com/GardenRetreatSpa" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a> 
+            <a href="https://www.instagram.com/GardenRetreatSpa" target="_blank"><i class="social-icon fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/gardenretreatspa" target="_blank"><i class="social-icon fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <span class="copy">&copy; ガーデンリトリートスパ 2024</span>
+</footer>
+<!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
